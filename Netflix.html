@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Netflix Clone</title>
+    <link rel="stylesheet" href="Netflix.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="C:\Users\deept\OneDrive\Pictures\Screenshots 1\Screenshot (50).png"
+        alt="Netflix Logo"
+        class="logo"
+      />
+      <h1>Mini Netflix</h1>
+      <div class="profile-selector">
+        <label for="profiles">Select Profile:</label>
+        <select id="profiles" onchange="changeProfile(event)">
+          <option value="default">Choose a profile</option>
+          <option value="kids">Kids</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <section class="video-player">
+        <iframe
+          id="main-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IKhxRdN2UkQ"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="movie-list" id="movie-list">
+        <div class="movie" onclick="playVideo('IKhxRdN2UkQ')">
+          <img
+            src="C:\\Users\\deept\\OneDrive\\Pictures\\Screenshots 1\\Screenshot (51).png"
+            alt="Movie 1"
+          />
+          <p>Movie 1</p>
+        </div>
+        <div class="movie" onclick="playVideo('IKhxRdN2UkQ')">
+          <img
+            src="C:\\Users\\deept\\OneDrive\\Pictures\\Screenshots 1\\Screenshot (55).png"
+            alt="Movie 2"
+          />
+          <p>Movie 2</p>
+        </div>
+        <div class="movie" onclick="playVideo('IKhxRdN2UkQ')">
+          <img
+            src="C:\\Users\\deept\\OneDrive\\Pictures\\Screenshots 1\\Screenshot (56).png"
+            alt="Movie 3"
+          />
+          <p>Movie 3</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="Netflix.js"></script>
+  </body>
+</html>
